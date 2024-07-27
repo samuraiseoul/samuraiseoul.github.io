@@ -6,31 +6,38 @@
     <meta name="color-scheme" content="dark" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.purple.min.css" />
     <title>Sophie The Lionhart</title>
+
+    <style>
+      .contact-row  header img {
+        max-width: 30%;
+      }
+    </style>
+
   </head>
   <body>
     <header>
-      <h1>Sophie The Lionhart</h1>
+      <div class="container">
+        <h1>Sophie The Lionhart</h1>
+      </div>
     </header>
     <main class="container">
       <article class="grid">
         <section>
-          <div> 
+          <div class="contact-row"> 
             <header>
-              <img src="./github-logo.svg" alt="GitHub Octocat Logo" /> <a href="https://www.github.com/samuraiseoul">GitHub</a>
+              <img src="./github-logo.svg" alt="GitHub Octocat Logo" />
+              <a href="https://www.github.com/samuraiseoul">GitHub</a>
             </header>
           </div>
-          <div>
+          <div class="contact-row">
             <header>
-              <img src="./linkedin-logo.png" alt="LinkedIn Logo" /> <a href="https://www.linkedin.com/in/sophielionhart">LinkedIn</a>
+              <img src="./linkedin-logo.png" alt="LinkedIn Logo" /> 
+              <a href="https://www.linkedin.com/in/sophielionhart">LinkedIn</a>
             </header>
           </div>
         </section>
         <section>
-          <iframe 
-            loading="lazy" 
-            title="Sophie The Lionhart's Resumé in PDF form from Canva" 
-            src="https://www.canva.com/design/DADfItJGmNw/ahIoND_YO-JdOQ0-LPDkaA/view?embed">
-          </iframe>
+          <img src="./resume.png" alt="Sophie The Lionhart's Resumé" />
         </section>
       </article>
     </main>
