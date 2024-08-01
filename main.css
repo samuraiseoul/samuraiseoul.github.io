@@ -1,0 +1,155 @@
+
+* {
+    color : #8748A9;
+}
+
+article {
+    background-color: #5E1387;
+    border-radius: 1em;
+    padding: 2em;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+}
+
+body > header {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    padding: 1em 0 .5em 0;
+}
+
+body > header > h1 {
+    font-weight: bolder;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    padding: 1.5em;
+    margin: auto;
+}
+
+details {
+    background-color: #370353;
+    padding: 2em;
+}
+
+details summary {
+    margin-bottom: 1em;
+    cursor: pointer;
+    list-style-type: '[ + ]';
+}
+
+details[open] > summary {
+    list-style-type: '[ - ]';
+}
+
+details summary::marker {
+    color: #e162bf;
+    font-size: 1.2em;
+}
+
+details summary h3 {
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+
+#learn {
+    width: 50%;
+    font-size: 0.4em;
+}
+
+#learn > article:first-child > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#learn > article:first-child > div > a:first-child {
+    width: 30%;
+}
+
+#learn > article:first-child > div > a:nth-child(2) {
+    width: 35%;
+}
+
+#learn > article:first-child > div > a > img {
+    margin: auto;
+}
+
+#aboutme {
+    display: flex;
+    justify-content: space-between;
+}
+
+#learn {
+    width: 30%;
+}
+
+#work {
+    width: 65%;
+    min-width: calc(100vw * 0.5);
+}
+
+#work embed {
+    width: 100%;
+    min-height: 90%
+}
+
+#email {
+    font-size: 0.4em;
+    letter-spacing: .075em;
+}
+
+.hint--rounded::after {
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+}
+
+#contact, #mywork {
+    margin-top: 2em;
+}
+
+#contact form {
+    margin-bottom: 0;
+}
+
+#contact form textarea {
+    resize: vertical;
+    width: 100%;
+    min-height: 150px;
+}
+
+#mywork section {
+    width: 100%;
+}
+
+#mywork section iframe {
+    width: 100%;
+    display: block;
+    margin: auto;
+    min-height: 300px;
+}
+
+#succeed {
+    color: green;
+    font-weight: bold;
+    display: none;
+}
+
+#fail {
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+.required {
+    color: red;
+    margin-left: 5px;
+}
