@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +19,7 @@
   </head>
   <body>
     <header>
-      <h1>Sophie The&nbsp;<span aria-label="Lionhart" class="hint--right hint--rounded">🦁️️❤️</span></h1>
+      <h1><span>Sophie</span> <span>The</span> <span>🦁️Lionhart❤️</span></h1>
     </header>
 
     <main>
@@ -66,7 +66,6 @@
               </label>
               <input type="submit">
             </form>
-
           </article>
         </div>
 
@@ -74,29 +73,38 @@
           <header>
             <h2>Work With Me!</h2>
           </header>
-          <embed src="./resume.pdf"/>
+          <object data="./resume.pdf" type="application/pdf" width="100%">
+            <p><a href="./resume.pdf">This browser does not support PDFs. Please download my resume here to view it as a PDF.</a></p>
+            <p>A fallback image of it is provided below:</p>
+            <img src="./resume.jpg" alt="Image of Sophie The Lionhart's resume PDF"/>
+          </object>
         </article>
       </section>
 
       <section id="mywork">
         <article>
           <h2>See My Work!</h2>
-          <section>
+          <section id="reframinghate">
             <details open>
               <summary>
                 <h3><a href="https://reframinghate.com">Reframing Hate</a></h3>
               </summary>
               <iframe src="https://reframinghate.com"></iframe>
             </details>
+            <article>
+                <h2><a href="https://reframinghate.com">Reframing Hate</a></h2>
+                <p>Reframing Hate is a website dedicated to eliminating the sources of bigotry and violence worldwide.
+                  Our main resource, The Periodic Table of Hate and Intolerance, aims to jumpstart this process by
+                  via education of the main sources of hatred.</p>
+            </article>
           </section>
         </article>
       </section>
-
     </main>
 
     <footer>
       <h6>
-        Created By Sophie The Lionhart in 2024
+        Created By Sophie The Lionhart
       </h6>
       <h6>
         Powered by: <a href="https://www.github.com">GitHub</a> Pages, <a href="https://web3forms.com">Web3Forms</a>, <a href="https://milligram.io/">Milligram</a> and <a href="https://kushagra.dev/lab/hint/">Hint.css</a>

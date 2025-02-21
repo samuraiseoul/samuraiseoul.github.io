@@ -28,6 +28,10 @@ body > header > h1 {
     font-weight: bolder;
 }
 
+body > header > h1 > span {
+    display: inline-block;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -97,7 +101,7 @@ details summary h3 {
     min-width: calc(100vw * 0.5);
 }
 
-#work embed {
+#work object {
     width: 100%;
     min-height: 90%
 }
@@ -152,4 +156,40 @@ details summary h3 {
 .required {
     color: red;
     margin-left: 5px;
+}
+
+#reframinghate article {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    body > header > h1 > span {
+        text-align: center;
+        display: block;
+    }
+
+    #aboutme {
+        flex-direction: column;
+    }
+
+    #learn {
+        width: auto;
+    }
+
+    #work {
+        width: auto;
+        margin-top: 1em;
+    }
+
+    #reframinghate article {
+        display: initial;
+    }
+
+    #reframinghate details {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
 }
